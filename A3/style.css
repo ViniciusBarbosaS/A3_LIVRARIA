@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body {
+  background-color: #faedcd;
+}
+
+/**
+* ! BARRA DE NAVEGAÇÃO 
+**/
+
+li, a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: ecf0f1;
+  text-decoration: none;
+  color: black;
+  background-color: #faedcd;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #faedcd;
+  
+}
+
+
+.Logo {
+  cursor: pointer;
+}
+
+
+.nav_links {
+  list-style: none;
+}
+
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  transition: all 0.3s ease 0s;
+  color: burlywood;
+}
+
+/**
+* ! DESIGN DO BOTAO DE CARRINHO USADO NA PÁGINA DE PRODUTOS  
+**/
+
+.carrinho {
+  position: relative;
+  background-color: #d4a373;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.carrinho_qnt {
+  position: absolute;
+  top: -15px;
+  right: -8px;
+  font-size: 18px;
+  background-color:#ccd5ae;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+/**
+* ! DESIGN BÁSICO PROS BOTÕES EM GERAL  
+**/
+
+button {
+  padding: 8px 25px;
+  background-color: #0f1111;
+  color: #faedcd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color:#121414;
+  color: #faedcd;
+  box-shadow: 3px 2px 5px burlywood;
+}
+
+/**
+* ! PAGINA PRINCIPAL IMAGEM E TEXTO 
+**/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg);
+  background-attachment: fixed;
+  font-size: 25px;
+ background-repeat: no-repeat;
+  font-family:'Montserrat' ;
+  color:#faedcd;
+}
+
+
+/**
+* ! DESIGN BÁSICO PROS BOTÕES EM GERAL  
+**/
+.btn {
+  padding: 8px 25px;
+  background-color: #0f1111;
+  color:#faedcd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  align-self: center;
+}
+
+.btn:hover{
+  background-color:#121414;
+  color: #faedcd;
+  box-shadow: 3px 2px 5px burlywood;
+}
+
+/**
+* ! LIVROS UM AO LADO DO OUTRO NOS DESTAQUES DO MÊS
+**/
+.row {
+  background-color: #faedcd;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: medium;
+    
+}
+
+.coluna {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  
+}
+
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Livros_home {
+  text-align: center;
+  font-size: 35px;
+  justify-content: center;
+
+}
+
+
+/**
+* ! PAGÍNA DE PRODUTOS 
+**/
+
+
+.livro_logo {
+  font-size: 50px;
+
+}
+
+.text_about  {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+img {
+  border-radius: 10px;
+}
+
+/**
+* ! CSS DOS PRODUTOS DO CARRINHO 
+**/
+
+.home_produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+}
